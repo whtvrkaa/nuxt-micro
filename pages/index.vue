@@ -1,62 +1,48 @@
 <template>
   <div>
-    <LocomotiveScroll
-      id="js-scroll"
-      :getted-options="{
-        smooth: true,
-        getSpeed: true,
-        lerp: 0.075,
-        smartphone: {
-          smooth: true,
-        },
-        tablet: {
-          smooth: true,
-        },
-      }"
-    >
-      <Pointer />
-      <div style="position: relative; overflow: hidden">
-        <Hero :heading="page.heading" :subheading="page.subheading" />
-        <Shapes />
-      </div>
+    <Pointer />
+    <div style="position: relative; overflow: hidden">
+      <Hero :heading="page.heading" :subheading="page.subheading" />
+      <Shapes />
+    </div>
 
-      <div
-        style="display: flex; gap: 8rem"
-        class="wrap px-8 mx-auto mt-12 sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md pb-12"
-      >
-        <div class="col12 col-m5 col-l5 col-push-m8">
-          <div class="half --img" data-effect="fadeUp" data-delay="2">
-            <picture
-              ><img
-                src="https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvay1zNDYtYWtlLTM5NDcuanBn.jpg"
-                alt="Why choose us?"
-            /></picture>
-          </div>
+    <div
+      style="display: flex; gap: 8rem"
+      class="wrap px-8 mx-auto mt-12 sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md pb-12"
+    >
+      <div class="col12 col-m5 col-l5 col-push-m8">
+        <div class="half --img" data-effect="fadeUp" data-delay="2">
+          <picture
+            ><img
+              src="https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvay1zNDYtYWtlLTM5NDcuanBn.jpg"
+              alt="Why choose us?"
+          /></picture>
         </div>
-        <div style="max-width: 45ch">
-          <h3>
-            {{ page.mainpitch.title }}
-          </h3>
-          <p>
-            {{ page.mainpitch.description }}
-          </p>
-          <p>
-            {{ page.mainpitch.description2 }}
-          </p>
-        </div>
-        <!-- <h2>
+      </div>
+      <div style="max-width: 45ch">
+        <h3>
+          {{ page.mainpitch.title }}
+        </h3>
+        <p>
+          {{ page.mainpitch.description }}
+        </p>
+        <p>
+          {{ page.mainpitch.description2 }}
+        </p>
+      </div>
+      <!-- <h2>
         {{ page.title }}
       </h2> -->
-        <!-- <p>
+      <!-- <p>
         {{ page.description }}
       </p> -->
-        <!-- <div style="padding-top: 2rem !important">
+      <!-- <div style="padding-top: 2rem !important">
         <p class="">
           {{ page.description2 }}
         </p>
       </div> -->
 
-        <!-- <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+      <!-- <div class="lg:grid lg:grid-cols-2 lg:gap-8">
         <div
           v-for="(blurb, index) in page.intro.blurbs"
           :key="index"
@@ -66,7 +52,7 @@
           <p class="mt-2 text-justify">{{ blurb.text }}.</p>
         </div>
       </div> -->
-        <!-- <p class="text-center">
+      <!-- <p class="text-center">
         <nuxt-link
           to="/products"
           class="inline-flex items-center px-6 py-3 text-base font-medium leading-6 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md text-kaldi hover:text-orange-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50"
@@ -100,176 +86,175 @@
           Read more
         </nuxt-link>
       </p> -->
-      </div>
-      <div class="approach-wrap --offPurple pt-2 pb-12">
-        <div
-          class="wrap px-8 mx-auto mt-12 sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md"
-        >
-          <h3>Approach</h3>
-          <p style="max-width: 80ch">
-            As part of this sponsorship arrangement TCS will be named Boots’
-            Innovation Partner of Choice: Boots and TCS will continue to define
-            what this means in more detail, but TCS would largely drive this,
-            including:
-          </p>
-          <div class="cards">
-            <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
-              <img src="/img/sponsorship.png" alt="" />
-              <h4>Executive sponsorship</h4>
-              <p>
-                From Boots CIO, Richard Corbridge and Transformation Director,
-                David Hobbs
-              </p>
-            </div>
-            <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
-              <img src="/img/commitment.png" alt="" />
-              <h4>Commitment</h4>
-              <p>
-                Boots commitment to work with TCS Innovation team to develop
-                proofs of concept and early prototypes for Boots
-              </p>
-            </div>
-            <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
-              <img src="/img/events.png" alt="" />
-              <h4>Innovation events</h4>
-              <p>Monthly/quarterly innovation events/workshops</p>
-            </div>
-            <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
-              <img src="/img/marketing.png" alt="" />
-              <h4>Marketing</h4>
-              <p>
-                Joint marketing on completion of relevant milestones (service
-                launch, POC launch, events, etc)
-              </p>
-            </div>
-            <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
-              <img src="/img/coinnovation.png" alt="" />
-              <h4>Co-Innovation</h4>
-              <p>
-                TCS brings different start-ups/universities to come to the space
-                and showcase different research/ideas
-              </p>
-            </div>
-            <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
-              <img src="/img/showcasing.png" alt="" />
-              <h4>Showcasing</h4>
-              <p>
-                TCS ‘showcase’ zone/screen as part of the area where TCS (or
-                partner) solutions/case studies can be shown for the awareness
-                of Boots business and IT colleagues
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="rightSymbol2 symbol --pink --blur">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            class="full"
-            viewBox="0 0 531 595"
-          >
-            <use xlink:href="#cSymbol"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="wrap mx-auto mt-12 xl:prose-xl lg:prose-lg md:prose-md">
-        <h3>About</h3>
-        <ul class="projects__list">
-          <!--[-->
-          <li class="project projects__list__item is-inview">
-            <a
-              href="https://www.tcs.com/pace"
-              target="blank_"
-              class="project__wrapper hoverable"
-              style="transform: translate(0px, 0px)"
-              ><div class="project__image__wrapper">
-                <img
-                  src="/img/pace.png"
-                  alt="LPNU StudRecruit"
-                  class="project__image"
-                  style="
-                    opacity: 1;
-                    transform-origin: 50% 100%;
-                    transform: translate(0px, 0px);
-                  "
-                />
-              </div>
-              <div class="project__content">
-                <h3 class="project__content__title">TCS PACE</h3>
-              </div></a
-            ><!---->
-          </li>
-          <li
-            data-scroll
-            :data-scroll-speed="id % 2 === 0 ? -0.5 : 1"
-            style="margin-top: 6rem"
-            class="project projects__list__item is-inview"
-          >
-            <a
-              href="https://www.boots-uk.com/about-boots-uk/about-boots/"
-              target="blank_"
-              class="project__wrapper hoverable"
-              style="transform: translate(0px, 0px)"
-              ><div class="project__image__wrapper">
-                <img
-                  src="/img/boots.png"
-                  alt="Portfolio"
-                  class="project__image"
-                  style="
-                    opacity: 1;
-                    transform-origin: 50% 100%;
-                    transform: translate(0px, 0px);
-                  "
-                />
-              </div>
-              <div class="project__content">
-                <h3 class="project__content__title">Boots</h3>
-              </div></a
-            >
-          </li>
-          <!--]-->
-        </ul>
-      </div>
+    </div>
+    <div class="approach-wrap --offPurple pt-2 pb-12">
       <div
-        style="position: relative; overflow: hidden"
-        :class="{ hovered: active3 }"
-        class="wrap-idea py-5 px-8 mx-auto mt-12 sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md pb-12"
+        class="wrap px-8 mx-auto mt-12 sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md"
       >
-        <Shapesidea />
-        <h3>Got an idea for us?</h3>
-        <p>We would love to hear from you…</p>
-        <div style="position: relative" class="lottie-wrap">
-          <div class="lottie">
-            <lottie-player
-              id="firstLottie"
-              class="lot"
-              :class="{ hide: active2 }"
-              style="width: 300px"
-              src="https://assets2.lottiefiles.com/packages/lf20_wjj7ygly.json"
-            ></lottie-player>
-            <lottie-player
-              id="secondLottie"
-              class="lot"
-              :class="{ show: active2 }"
-              style="width: 300px"
-              autoplay
-              loop
-              src="https://assets2.lottiefiles.com/packages/lf20_wjj7ygly.json"
-            ></lottie-player>
+        <h3>Approach</h3>
+        <p style="max-width: 80ch">
+          As part of this sponsorship arrangement TCS will be named Boots’
+          Innovation Partner of Choice: Boots and TCS will continue to define
+          what this means in more detail, but TCS would largely drive this,
+          including:
+        </p>
+        <div class="cards">
+          <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
+            <img src="/img/sponsorship.png" alt="" />
+            <h4>Executive sponsorship</h4>
+            <p>
+              From Boots CIO, Richard Corbridge and Transformation Director,
+              David Hobbs
+            </p>
           </div>
-          <div @mouseover="active3 = true" @mouseleave="active3 = false">
-            <a
-              id="hover"
-              @mouseover="active2 = true"
-              @mouseleave="active2 = false"
-              class="submit-btn"
-              href=""
-              >Submit your idea</a
-            >
+          <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
+            <img src="/img/commitment.png" alt="" />
+            <h4>Commitment</h4>
+            <p>
+              Boots commitment to work with TCS Innovation team to develop
+              proofs of concept and early prototypes for Boots
+            </p>
+          </div>
+          <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
+            <img src="/img/events.png" alt="" />
+            <h4>Innovation events</h4>
+            <p>Monthly/quarterly innovation events/workshops</p>
+          </div>
+          <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
+            <img src="/img/marketing.png" alt="" />
+            <h4>Marketing</h4>
+            <p>
+              Joint marketing on completion of relevant milestones (service
+              launch, POC launch, events, etc)
+            </p>
+          </div>
+          <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
+            <img src="/img/coinnovation.png" alt="" />
+            <h4>Co-Innovation</h4>
+            <p>
+              TCS brings different start-ups/universities to come to the space
+              and showcase different research/ideas
+            </p>
+          </div>
+          <div class="card rounded-lg shadow-lg bg-white max-w-sm px-8 py-8">
+            <img src="/img/showcasing.png" alt="" />
+            <h4>Showcasing</h4>
+            <p>
+              TCS ‘showcase’ zone/screen as part of the area where TCS (or
+              partner) solutions/case studies can be shown for the awareness of
+              Boots business and IT colleagues
+            </p>
           </div>
         </div>
       </div>
-    </LocomotiveScroll>
+      <div class="rightSymbol2 symbol --pink --blur">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          class="full"
+          viewBox="0 0 531 595"
+        >
+          <use xlink:href="#cSymbol"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="wrap mx-auto mt-12 xl:prose-xl lg:prose-lg md:prose-md">
+      <h3>About</h3>
+      <ul class="projects__list">
+        <!--[-->
+        <li class="project projects__list__item is-inview">
+          <a
+            href="https://www.tcs.com/pace"
+            target="blank_"
+            class="project__wrapper hoverable"
+            style="transform: translate(0px, 0px)"
+            ><div class="project__image__wrapper">
+              <img
+                src="/img/pace.png"
+                alt="LPNU StudRecruit"
+                class="project__image"
+                style="
+                  opacity: 1;
+                  transform-origin: 50% 100%;
+                  transform: translate(0px, 0px);
+                "
+              />
+            </div>
+            <div class="project__content">
+              <h3 class="project__content__title">TCS PACE</h3>
+            </div></a
+          ><!---->
+        </li>
+        <li
+          data-scroll
+          :data-scroll-speed="id % 2 === 0 ? -0.5 : 1"
+          style="margin-top: 6rem"
+          class="project projects__list__item is-inview"
+        >
+          <a
+            href="https://www.boots-uk.com/about-boots-uk/about-boots/"
+            target="blank_"
+            class="project__wrapper hoverable"
+            style="transform: translate(0px, 0px)"
+            ><div class="project__image__wrapper">
+              <img
+                src="/img/boots.png"
+                alt="Portfolio"
+                class="project__image"
+                style="
+                  opacity: 1;
+                  transform-origin: 50% 100%;
+                  transform: translate(0px, 0px);
+                "
+              />
+            </div>
+            <div class="project__content">
+              <h3 class="project__content__title">Boots</h3>
+            </div></a
+          >
+        </li>
+        <!--]-->
+      </ul>
+    </div>
+    <div
+      style="position: relative; overflow: hidden"
+      :class="{ hovered: active3 }"
+      class="wrap-idea py-5 px-8 mx-auto mt-12 sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md pb-12"
+    >
+      <Shapesidea />
+      <h3>Got an idea for us?</h3>
+      <p>We would love to hear from you…</p>
+      <div style="position: relative" class="lottie-wrap">
+        <div class="lottie">
+          <lottie-player
+            id="firstLottie"
+            class="lot"
+            :class="{ hide: active2 }"
+            style="width: 300px"
+            src="https://assets2.lottiefiles.com/packages/lf20_wjj7ygly.json"
+          ></lottie-player>
+          <lottie-player
+            id="secondLottie"
+            class="lot"
+            :class="{ show: active2 }"
+            style="width: 300px"
+            autoplay
+            loop
+            src="https://assets2.lottiefiles.com/packages/lf20_wjj7ygly.json"
+          ></lottie-player>
+        </div>
+        <div @mouseover="active3 = true" @mouseleave="active3 = false">
+          <a
+            id="hover"
+            @mouseover="active2 = true"
+            @mouseleave="active2 = false"
+            class="submit-btn"
+            href=""
+            >Submit your idea</a
+          >
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>

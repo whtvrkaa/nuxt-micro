@@ -60,7 +60,7 @@ export default {
     '@nuxt/content',
   ],
   build: {
-    transpile: ['gsap', '@lottiefiles/lottie-player'],
+    transpile: ['gsap', 'nuxt-gsap-module', '@lottiefiles/lottie-player'],
     babel: {
       babelrc: false,
       compact: false

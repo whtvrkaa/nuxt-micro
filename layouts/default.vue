@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Pointer />
     <Header />
     <Nuxt />
     <Footer />

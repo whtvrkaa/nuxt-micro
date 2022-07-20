@@ -1,5 +1,6 @@
 <template>
   <section>
+    <Pointer />
     <div class="hero-manifesto">
       <div class="heading-wrapper">
         <div class="wrap-head">
