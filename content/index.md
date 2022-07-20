@@ -1,20 +1,29 @@
 ---
-title: Great coffee with a conscience
+title: We are Innovate
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: We are Innovate
+subheading: “We use our passion for innovation, to create new and disruptive
+  retail focussed experiences and products, for Tesco customers and colleagues
+  globally.”
+subheading2: .
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  title: Objectives
+  description: >-
+    Boots and TCS enjoy an extensive partnership spanning a range of activities
+    from IT services and run-ops to innovation, growth and transformation
+    initiatives. This agreement sets
+
+    out the objectives and terms of TCS’ sponsorship of a new innovation space within Boots’ D90 building at its Nottingham support office.
+  description2: >-
+    The sponsorships reflects the depth of the two companies’ partnership and
+    the value that this brings to both organisations. The space is also intended
+    to act as a physical catalyst
+
+    for innovation and new agile ways of working, enabling new types of interaction, embracing hybrid working models and dissolving cross-functional silos.
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
