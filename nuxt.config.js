@@ -59,4 +59,11 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
+  build: {
+    transpile: ['gsap', '@lottiefiles/lottie-player'],
+    babel: {
+      babelrc: false,
+      compact: false
+    }
+},
 }
