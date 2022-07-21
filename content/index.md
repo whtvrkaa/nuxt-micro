@@ -3,7 +3,7 @@ title: We are Innovate
 image: /img/home-jumbotron.jpg
 heading: We are Innovate
 subheading: “We use our passion for innovation, to create new and disruptive
-  retail focussed experiences and products, for Tesco customers and colleagues
+  retail focussed experiences and products, for Boots customers and colleagues
   globally.”
 subheading2: .
 mainpitch:

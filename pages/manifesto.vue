@@ -9,8 +9,8 @@
           </div>
           <h1 class="shadow-heading">MANIFESTO</h1>
           <p class="paragraph-hero">
-            We use technology to make things better for customers, simpler for
-            colleagues and more efficient for boots
+            We use technology to make things <b>better</b> for customers,
+            <b>simpler</b> for colleagues and <b>more efficient</b> for boots
           </p>
         </div>
       </div>

@@ -21,6 +21,8 @@
     "@nuxt/content": "^1.9.0",
     "@tailwindcss/typography": "^0.2.0",
     "core-js": "^3.6.5",
+    "express": "^4.18.1",
+    "flowbite": "^1.4.7",
     "gsap": "^3.10.4",
     "nuxt": "^2.14.6"
   },

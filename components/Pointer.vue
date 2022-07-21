@@ -3,7 +3,7 @@
     <div class="custom-cursor">
       <div id="cursor-big" class="custom-cursor__ball custom-cursor__ball--big">
         <img
-          style="padding: 0.4rem"
+          style="padding: 0.2rem"
           id="icon"
           class="icon"
           src="img/arrow-link.svg"
@@ -66,7 +66,7 @@ export default {
     }
     function onMouseHover() {
       gsap.to(cursorBig, 0.3, {
-        scale: 4,
+        scale: 8,
       })
       gsap.to(icon, { opacity: 1 })
     }
@@ -78,7 +78,7 @@ export default {
     }
     function onMouseHover2() {
       gsap.to(cursorBig, 0.3, {
-        scale: 4,
+        scale: 8,
       })
     }
     function onMouseHoverOut2() {
@@ -123,8 +123,8 @@ export default {
 
 .custom-cursor__ball--big {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   /* background-image: url('https://img.icons8.com/ios/2x/cursor.png') !important; */
   background-size: cover;
   background: #29217a;

@@ -181,7 +181,7 @@
               />
             </div>
             <div class="project__content">
-              <h3 class="project__content__title">TCS PACE</h3>
+              <h3 class="project__content__title">Go to TCS PACE website</h3>
             </div></a
           ><!---->
         </li>
@@ -209,7 +209,7 @@
               />
             </div>
             <div class="project__content">
-              <h3 class="project__content__title">Boots</h3>
+              <h3 class="project__content__title">Go to Boots website</h3>
             </div></a
           >
         </li>
@@ -244,13 +244,15 @@
           ></lottie-player>
         </div>
         <div @mouseover="active3 = true" @mouseleave="active3 = false">
-          <a
-            id="hover"
-            @mouseover="active2 = true"
-            @mouseleave="active2 = false"
-            class="submit-btn"
-            href=""
-            >Submit your idea</a
+          <nuxt-link to="/form"
+            ><span
+              id="hover"
+              @mouseover="active2 = true"
+              @mouseleave="active2 = false"
+              class="submit-btn"
+              href=""
+              >Submit your idea</span
+            ></nuxt-link
           >
         </div>
       </div>
